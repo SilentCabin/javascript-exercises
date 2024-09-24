@@ -6,8 +6,15 @@ const sumAll = function(num1, num2) {
         }
         console.log(total);
         return total;
+    } else if(num1 > num2) {
+        for (let i = num2; i <= num1; i++) {
+            total += i;            
+        }
+        console.log(total);
+        return total;
+        
     }
 };
-sumAll(1,3);
+sumAll(3, 10);
 // Do not edit below this line
 module.exports = sumAll;
